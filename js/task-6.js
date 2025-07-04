@@ -11,6 +11,7 @@ function getRandomHexColor() {
   
   function destroyBoxes() {
     boxesDiv.innerHTML = "";
+    boxesDiv.style.display = "none";
   }
   
   function createBoxes(amount) {
@@ -28,6 +29,7 @@ function getRandomHexColor() {
     }
   
     boxesDiv.appendChild(fragments);
+    boxesDiv.style.display = "flex";
   }
   
   createBtn.addEventListener("click", () => {
